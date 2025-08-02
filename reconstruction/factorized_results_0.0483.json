@@ -1,0 +1,21 @@
+{
+  "name": "factorized",
+  "description": "Inference (ans)",
+  "results": {
+    "psnr": [
+      35.98190906716456
+    ],
+    "ms-ssim": [
+      0.9877273316184679
+    ],
+    "bpp": [
+      1.161007351345486
+    ],
+    "encoding_time": [
+      0.23156943917274475
+    ],
+    "decoding_time": [
+      0.16320321957270303
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "hyperprior",
+  "description": "Inference (ans)",
+  "results": {
+    "psnr": [
+      33.53108494188209
+    ],
+    "ms-ssim": [
+      0.9764691516757011
+    ],
+    "bpp": [
+      0.5611029730902779
+    ],
+    "encoding_time": [
+      0.0874862273534139
+    ],
+    "decoding_time": [
+      0.05885013937950134
+    ]
+  }
+}

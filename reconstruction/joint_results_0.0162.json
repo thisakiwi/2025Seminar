@@ -1,0 +1,21 @@
+{
+  "name": "joint_autogressive",
+  "description": "Inference (ans)",
+  "results": {
+    "psnr": [
+      33.75728460950948
+    ],
+    "ms-ssim": [
+      0.9781404435634613
+    ],
+    "bpp": [
+      0.5152926974826387
+    ],
+    "encoding_time": [
+      3.724884887536367
+    ],
+    "decoding_time": [
+      8.001883119344711
+    ]
+  }
+}
