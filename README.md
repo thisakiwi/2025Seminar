@@ -12,8 +12,8 @@ python test.py --model_name [模型名] --path [模型路径]
 ```
 3. 绘图的命令，其中-m默认为计算ms-ssim，具体绘图参数可在代码中修改。关于RD与RD3的不同，详见“二、代码组成”的第5项。
 ```bash
-python /code/code/drawRD.py --input-dir /code/reconstruction -m psnr --show
-python /code/code/drawRD3.py -m psnr --show
+python drawRD.py --input-dir /reconstruction -m psnr --show
+python drawRD3.py -m psnr --show
 ```
 4. 训练结果：JSON文件包含在reconstruction和reconstruction2文件夹中，绘图和BD-RATE计算结果保存在results文件夹中。
 ## 二、代码组成
@@ -95,5 +95,5 @@ def parse_args      #获取参数与数据路径，可自行修改
     with open(output_filename, "w") as f:
         json.dump(output, f, indent=2)
  ```
-5. drawRD.py与drawRD3.py:这两个都是绘制RD曲线的函数，最初的版本存放在/code/src/utils/plot，不同的是：drawRD.py适用于/code/reconstruction路径下的JSON文件格式，drawRD3.py适用于/code/reconstruction2路径下的JSON文件格式。这两个路径中各包含JSON可供参考。
+5. drawRD.py与drawRD3.py:这两个都是绘制RD曲线的函数，最初的版本存放在/src/utils/plot，不同的是：drawRD.py适用于/reconstruction路径下的JSON文件格式，drawRD3.py适用于/reconstruction2路径下的JSON文件格式。这两个路径中各包含JSON可供参考。
 6. 关于熵模型和补全代码的分析与理解已写在代码注释中，此处不赘述。
