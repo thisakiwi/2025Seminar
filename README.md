@@ -97,3 +97,4 @@ def parse_args      #获取参数与数据路径，可自行修改
  ```
 5. drawRD.py与drawRD3.py:这两个都是绘制RD曲线的函数，最初的版本存放在/src/utils/plot，不同的是：drawRD.py适用于/reconstruction路径下的JSON文件格式，drawRD3.py适用于/reconstruction2路径下的JSON文件格式。这两个路径中各包含JSON可供参考。
 6. 关于熵模型和补全代码的分析与理解已写在代码注释中，此处不赘述。
+7. /src/models中，hyperprior2.py在x上添加layer，并使用残差块+上下文模型，但是结果不好，不能训练。hyperprior3.py是将layer添加到z上，可以训练。
