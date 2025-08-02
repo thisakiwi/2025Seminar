@@ -95,5 +95,4 @@ def parse_args      #获取参数与数据路径，可自行修改
         json.dump(output, f, indent=2)
  ```
 5. drawRD.py与drawRD3.py:这两个都是绘制RD曲线的函数，最初的版本存放在/code/src/utils/plot，不同的是：drawRD.py适用于/code/reconstruction路径下的JSON文件格式，drawRD3.py适用于/code/reconstruction2路径下的JSON文件格式。这两个路径中各包含JSON可供参考。
-6. Bjontegaard_metric-master文件夹里是计算BD-RATE的函数，来自于https://github.com/Anserw/Bjontegaard_metric
-7. 关于熵模型和补全代码的分析与理解已写在代码注释中，此处不赘述。
+6. 关于熵模型和补全代码的分析与理解已写在代码注释中，此处不赘述。
