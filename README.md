@@ -13,7 +13,7 @@ python test.py --model_name [模型名] --path [模型路径]
 3. 绘图的命令，其中-m默认为计算ms-ssim，具体绘图参数可在代码中修改。关于RD与RD3的不同，详见“二、代码组成”的第5项。
 ```bash
 python drawRD.py --input-dir /reconstruction -m psnr --show
-python drawRD3.py -m psnr --show
+python drawRD3.py -m psnr --show #代码中已写好路径
 ```
 4. 训练结果：JSON文件包含在reconstruction和reconstruction2文件夹中，绘图和BD-RATE计算结果保存在results文件夹中。
 ## 二、代码组成
